@@ -1,0 +1,52 @@
+# Ignore environment variables
+.env
+
+# Ignore dependencies
+node_modules/
+
+# Ignore build files
+dist/
+build/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+logs/
+temp/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore npm debug log
+npm-debug.log*
+
+# Ignore yarn lockfiles (if you're using Yarn)
+yarn-error.log
+yarn.lock
+
+# Ignore package-lock.json (optional, depending on your workflow)
+# Uncomment the line below if you don't want to track package-lock.json
+# package-lock.json
+
+# Ignore coverage reports
+coverage/
+
+# Ignore uploaded files or assets (if applicable)
+uploads/
+assets/
+
+# Ignore any other custom folders or files
+# Example: If you have a folder named "secrets", add it here
+# secrets/
