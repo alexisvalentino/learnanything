@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for redirection
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,6 +16,8 @@ const Login = () => {
       // Store the token in localStorage
       localStorage.setItem('token', token);
 
+      // Redirect to the home page or another protected route
+      navigate('/'); // Redirect to the homepage
       alert('Login successful!');
     } catch (error) {
       console.error('Login failed:', error.response?.data?.message || 'An error occurred');
